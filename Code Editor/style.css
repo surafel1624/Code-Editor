@@ -12,8 +12,8 @@
     display: flex;
 }
 .left, .right{
-    flex-basis: 50%;
     padding: 10px;
+    flex-grow: 1;
 }
 .left{
     display: flex;
@@ -59,4 +59,16 @@ label{
 }
 .fa-brands, .fa-solid{
     color: aqua;
+}
+.splitter {
+    width: 8px;
+    cursor: col-resize;
+    background-color: #555; /* Neutral color */
+    flex-shrink: 0;
+    transition: background-color 0.15s ease-in-out; /* Smooth transition */
+    border-radius: 7px;
+    height: 99vh;
+}
+.splitter:hover {
+    background-color: #333;
 }
